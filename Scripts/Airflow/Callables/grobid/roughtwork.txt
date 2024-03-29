@@ -1,0 +1,4 @@
+1. grobid extraction 3 files - TASK 1
+2. content class and metadata class - task 2
+3. Content extraction & metadata extraction - task 3
+4. Database upload to snowflake - task 4
