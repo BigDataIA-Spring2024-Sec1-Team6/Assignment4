@@ -1,0 +1,55 @@
+!pip install diagrams
+from diagrams import Diagram, Cluster
+from diagrams.custom import Custom
+from diagrams.onprem.workflow import Airflow
+from diagrams.onprem.container import Docker
+from diagrams.onprem.client import User
+
+graph_attr = {
+    "fontsize": "30",
+    "bgcolor": "white",
+    "nodesep": "1.60",  # adjust the space between nodes
+    "ranksep": "0.75",  # adjust the space between ranks (levels)
+    "width": "0.75",    # set the width attribute (in inches)
+    "height": "0.75",   # set the height attribute (in inches)
+    "fixedsize": "true" # force fixed size of nodes
+}
+
+with Diagram("Enhanced Data Pipeline - Architectural Diagram", show=False) as data_pipeline:
+    user = User("end-user")
+    streamlit_app = Docker("Streamlit App")
+    fast_api_service = Custom("FastAPI Service\n(Data Transformation)", "/content/FastAPITrigger.png")
+    fast_api_snowflake = Custom("FastAPI Service\n(Snowflake Interface)", "/content/FastAPITrigger.png")
+    query = Custom("SQL Query", "/content/SQLquery.png") 
+    s3_buckets = Custom("S3_buckets", "/content/S3_bucket.png") 
+    result = Custom("Snowflake Interface Result", "/content/SQLresult.png")
+    snowflake_db = Custom("Snowflake Database", "/content/snowflake.png")  
+
+    with Cluster("Airflow Pipeline"):
+        airflow = Airflow("Airflow")
+        extraction = Custom("Data Extraction (Grobid/PyPDF)", "/content/Extraction.png")  
+        validation = Custom("Data Validation", "/content/Validation.png")  
+        loading = Custom("Data Loading", "/content/Loading.png")    
+    
+    with Cluster("Data sources"):
+      PDF1 = Custom("PDF1", "/content/pdf.png")  
+      PDF2 = Custom("PDF2", "/content/pdf.png")  
+      PDF3 = Custom("PDF3", "/content/pdf.png") 
+
+    
+    # Connections
+    streamlit_app >> PDF1 >> s3_buckets
+    streamlit_app >> PDF2 >> s3_buckets
+    streamlit_app >> PDF3 >> s3_buckets
+
+    s3_buckets >> fast_api_service >> airflow
+    airflow >> extraction >> snowflake_db
+    airflow >> validation >> snowflake_db
+    airflow >> loading >> snowflake_db 
+    
+    user >> streamlit_app >> query >> snowflake_db
+    
+    snowflake_db >> fast_api_snowflake >> result >> streamlit_app >> user
+    
+
+data_pipeline
