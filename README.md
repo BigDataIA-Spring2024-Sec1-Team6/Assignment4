@@ -72,6 +72,8 @@ The prerequisites for undertaking the described project would likely include:
 ## References 
 - https://grobid.readthedocs.io/en/latest/Run-Grobid/
 - https://docs.getdbt.com/guides/snowflake?step=1
+- https://diagrams.mingrammer.com/docs/guides/diagram
+- https://docs.streamlit.io/
 - https://github.com/ashrithagoramane/DAMG7245-Spring24/tree/main/repository_structure
 
 ## Learning Outcome
@@ -105,7 +107,5 @@ ARCHITECTURE DIAGRAM
 Links: 
 
 CodeLabs Link :- https://codelabs-preview.appspot.com/?file_id=1ulPzcwcL_LYFQzAODiAhVDi4RdKQZm9SB5UvH9AbDUE#3
-
-DBT - https://colab.research.google.com/drive/1hnJOytMeNpfFYNUb7wbORc3XGwEo5SQO?usp=sharing#scrollTo=H3w1JM3Y9zkd
 
 Architectural Diagram - [https://colab.research.google.com/drive/1CTw6ppHcMIPszK8kBkhjIZaAFtuFoN21?usp=sharing](https://colab.research.google.com/drive/1ARtiMF3h7JqUg7ISwqGJ2cuTfiLJRAVe?usp=sharing)
