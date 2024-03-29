@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: streamlitdemo
+    ports:
+      - "8081:8080"
+    networks:
+      - front-tier
+      - back-tier
+    configs:
+    - httpd-configs
+    secrets:
+      -server-certificate
