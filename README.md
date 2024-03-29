@@ -92,10 +92,10 @@ WE ATTEST THAT WE HAVEN'T USED ANY OTHER STUDENT'S WORK IN OUR ASSIGNMENT AND AB
 
 | Name               | Contribution %   | Contributions                                             |
 |--------------------|------------------|-----------------------------------------------------------|
-| Osborne Lopes      | 40%              | URLClass to represent the schema for the CFA webpages     |
-| Akshita Pathania   | 33.3%            | Creation of two PDFClasses to represent the Grobid output |
-| Smithi Parthiban   | 33.3%            | DBT with Snowflake to run transformation workflows        |
-| Manimanya Reddy    | 33.3%            | Build 5+5 test cases using Pytest and Pydantic            |
+| Osborne Lopes      | 40%              | FastAPI, Airflow (30%)                                    |
+| Akshita Pathania   | 33.3%            | Streamlit (30%), Documentation, Architecture Diagram      |
+| Smithi Parthiban   | 33.3%            | Snowflake Scripts, Streamlit (70%)                        |
+| Manimanya Reddy    | 33.3%            | Airflow (70%)                                             |
  
 
 ARCHITECTURE DIAGRAM
