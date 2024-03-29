@@ -49,6 +49,7 @@ The prerequisites for undertaking the described project would likely include:
 
 ## Project Structure
 
+```
 📦 
 ├─ .gitignore
 ├─ Diagrams
@@ -77,6 +78,7 @@ The prerequisites for undertaking the described project would likely include:
 │  │  ├─ dags
 │  │  │  └─ master_dag.py
 │  │  ├─ docker-compose.yaml
+│  │  ├─ logs
 │  │  └─ requirements.txt
 │  ├─ FastAPI
 │  │  ├─ FastAPI1_TriggerAirflow.py
