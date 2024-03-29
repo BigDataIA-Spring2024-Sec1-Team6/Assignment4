@@ -1,0 +1,12 @@
+requests
+python-dotenv
+snowflake-sqlalchemy
+SQLAlchemy
+pandas
+boto3
+validators
+pydantic 
+pytest
+elementpath
+streamlit
+os
