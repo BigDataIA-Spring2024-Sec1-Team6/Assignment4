@@ -4,15 +4,9 @@ snowflake-sqlalchemy
 SQLAlchemy
 pandas
 boto3
-PyPDF2
-scrapy
-selenium
-webscraping
-scrapy-selenium
 validators
 pydantic 
 pytest
 elementpath
 streamlit
-matplotlib
 os
