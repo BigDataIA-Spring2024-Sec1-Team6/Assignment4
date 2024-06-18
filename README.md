@@ -126,7 +126,7 @@ WE ATTEST THAT WE HAVEN'T USED ANY OTHER STUDENT'S WORK IN OUR ASSIGNMENT AND AB
 | Manimanya Reddy    | 33.3%            | Airflow (70%)                                             |
  
 
-ARCHITECTURE DIAGRAM
+**ARCHITECTURE DIAGRAM**
 
 <img width="1067" alt="Screenshot 2024-03-29 at 8 55 19 AM" src="https://github.com/BigDataIA-Spring2024-Sec1-Team6/Assignment4/assets/114605149/123fe4a7-2362-4b53-b0f5-fe1e1bd89863">
 
